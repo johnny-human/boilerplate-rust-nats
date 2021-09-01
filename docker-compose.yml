@@ -1,0 +1,11 @@
+services:
+  client:
+    build:
+      context: .
+      network: host
+      dockerfile: client/Dockerfile
+  hello:
+    build:
+      context: .
+      network: host
+      dockerfile: hello/Dockerfile
